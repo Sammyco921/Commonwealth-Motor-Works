@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Begin a Commonwealth commission. Tell us what you imagine, and we will begin there.">
+<title>Begin a Commission — Commonwealth Motor Company</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<noscript><style>
+@media(max-width:1180px){
+  .menu{display:none}
+  .bar{flex-wrap:wrap}
+  nav{display:block;position:static;border:0;padding:0;width:100%}
+  nav ul{flex-direction:row;flex-wrap:wrap;gap:12px 20px}
+  nav a{font-size:.78rem;padding:4px 0}
+  .bar>.begin{display:inline-block}
+}
+</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header><div class="bar">
+<a class="wm" href="index.html" aria-label="COMMONWEALTH, home">COMMONWEALTH</a>
+<nav id="nav" aria-label="Primary"><ul>
+<li><a href="commission.html">The Commission</a></li>
+<li><a href="design-philosophy.html">Design</a></li>
+<li><a href="engineering-craftsmanship.html">Engineering</a></li>
+<li><a href="demonstrator.html">Demonstrator</a></li>
+<li><a href="ownership.html">Ownership</a></li>
+</ul><a class="begin mbegin" href="begin-a-commission.html" aria-current="page">Begin a Commission</a></nav>
+<a class="begin" href="begin-a-commission.html" aria-current="page">Begin a Commission</a>
+<button class="menu" id="mb" aria-expanded="false" aria-controls="nav">Menu</button>
+</div></header>
+
+<main id="main" tabindex="-1">
+
+<div class="w t split">
+  <div>
+    <p class="eyebrow">Begin a Commission</p>
+    <h1>Tell us what you imagine.</h1>
+    <p>You do not need a finished design, an engineering specification, or every answer.</p>
+    <p>Tell us what interests you, what you want an automobile to feel like, and what you would like it to do. We will begin there.</p>
+    <p class="note">We read every enquiry personally and reply by email.</p>
+  </div>
+  <div>
+    <!-- Connect this form to your email service or CRM before launch (see README).
+         Until it is wired up, the form validates and confirms in the browser only. -->
+    <form id="f" novalidate>
+      <label>Name<input name="name" autocomplete="name" required aria-describedby="e-name"><span class="err" id="e-name"></span></label>
+      <label>Email<input name="email" type="email" autocomplete="email" required aria-describedby="e-email"><span class="err" id="e-email"></span></label>
+      <label>Preferred contact method<select name="how"><option>Email</option><option>Phone call</option><option>Video call</option><option>No preference</option></select></label>
+      <label>What has inspired your interest in a bespoke automobile?<textarea name="a" placeholder="A journey, a memory, a design you admire…"></textarea></label>
+      <label>What would you like it to feel like, or be capable of?<textarea name="b" required aria-describedby="e-b" placeholder="Quiet on long drives, easy to live with, surprising in the details…"></textarea><span class="err" id="e-b"></span></label>
+      <label>Any initial ideas, references, or requirements?<textarea name="c" placeholder="Optional"></textarea></label>
+      <label>Anything else you'd like us to know?<textarea name="d" placeholder="Optional"></textarea></label>
+      <div><button class="btn" type="submit">Send</button></div>
+    </form>
+    <div class="ok" id="ok" role="status" hidden tabindex="-1">
+      <h2>Thank you.</h2>
+      <p>We have your enquiry and will be in touch shortly.</p>
+      <a class="btn q" href="index.html">Back to home</a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer><div class="in">
+<div>
+  <a class="wm" href="index.html">COMMONWEALTH</a>
+  <p>A bespoke automobile company. Every commission begins with the person who will own the car.</p>
+  <a class="begin" style="border-color:var(--ivory)" href="begin-a-commission.html">Begin a Commission</a>
+</div>
+<ul aria-label="Pages">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="commission.html">The Commission</a></li>
+  <li><a href="design-philosophy.html">Design Philosophy</a></li>
+  <li><a href="engineering-craftsmanship.html">Engineering &amp; Craftsmanship</a></li>
+</ul>
+<ul aria-label="More">
+  <li><a href="demonstrator.html">The Demonstrator</a></li>
+  <li><a href="ownership.html">Ownership</a></li>
+  <li><a href="begin-a-commission.html">Begin a Commission</a></li>
+  <li><a href="privacy.html">Privacy</a></li>
+</ul>
+</div><div class="fine">© Commonwealth Motor Company. All rights reserved. <a href="privacy.html">Privacy</a></div></footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
