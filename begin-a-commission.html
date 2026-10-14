@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Begin a Commonwealth commission. Tell us what you imagine, and we will begin there.">
+<meta name="description" content="Begin a Commission — Commonwealth Motor Company. Tell us what you imagine.">
 <title>Begin a Commission — Commonwealth Motor Company</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,26 +43,57 @@
   <div>
     <p class="eyebrow">Begin a Commission</p>
     <h1>Tell us what you imagine.</h1>
-    <p>You do not need a finished design, an engineering specification, or every answer.</p>
-    <p>Tell us what interests you, what you want an automobile to feel like, and what you would like it to do. We will begin there.</p>
+    <p>You don’t need a finished design, an engineering specification, or all the answers.</p>
+    <p>Tell us what draws you to a bespoke automobile, how you’d like it to feel, and what you hope it will make possible. We’ll begin with your ideas and explore where they could lead.</p>
     <p class="note">We read every enquiry personally and reply by email.</p>
   </div>
+
   <div>
-    <!-- Connect this form to your email service or CRM before launch (see README).
-         Until it is wired up, the form validates and confirms in the browser only. -->
+    <!-- Connect this form to an email service or CRM before launch.
+         Until then, submissions are not sent or received. -->
     <form id="f" novalidate>
-      <label>Name<input name="name" autocomplete="name" required aria-describedby="e-name"><span class="err" id="e-name"></span></label>
-      <label>Email<input name="email" type="email" autocomplete="email" required aria-describedby="e-email"><span class="err" id="e-email"></span></label>
-      <label>Preferred contact method<select name="how"><option>Email</option><option>Phone call</option><option>Video call</option><option>No preference</option></select></label>
-      <label>What has inspired your interest in a bespoke automobile?<textarea name="a" placeholder="A journey, a memory, a design you admire…"></textarea></label>
-      <label>What would you like it to feel like, or be capable of?<textarea name="b" required aria-describedby="e-b" placeholder="Quiet on long drives, easy to live with, surprising in the details…"></textarea><span class="err" id="e-b"></span></label>
-      <label>Any initial ideas, references, or requirements?<textarea name="c" placeholder="Optional"></textarea></label>
-      <label>Anything else you'd like us to know?<textarea name="d" placeholder="Optional"></textarea></label>
-      <div><button class="btn" type="submit">Send</button></div>
+      <label>Name
+        <input name="name" autocomplete="name" required aria-describedby="e-name">
+        <span class="err" id="e-name"></span>
+      </label>
+
+      <label>Email
+        <input name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+        <span class="err" id="e-email"></span>
+      </label>
+
+      <label>How would you prefer us to contact you?
+        <select name="how">
+          <option>Email</option>
+          <option>Phone call</option>
+          <option>Video call</option>
+          <option>No preference</option>
+        </select>
+      </label>
+
+      <label>What has inspired your interest in a bespoke automobile?
+        <textarea name="a" placeholder="A journey, a memory, a design you admire…"></textarea>
+      </label>
+
+      <label>How would you like the automobile to feel or perform?
+        <textarea name="b" required aria-describedby="e-b" placeholder="Quiet on long drives, enjoyable to use every day, full of thoughtful details…"></textarea>
+        <span class="err" id="e-b"></span>
+      </label>
+
+      <label>Do you have any early ideas, references, or requirements?
+        <textarea name="c" placeholder="Anything you have in mind—optional"></textarea>
+      </label>
+
+      <label>Is there anything else you’d like us to know?
+        <textarea name="d" placeholder="Optional"></textarea>
+      </label>
+
+      <div><button class="btn" type="submit">Send enquiry</button></div>
     </form>
+
     <div class="ok" id="ok" role="status" hidden tabindex="-1">
       <h2>Thank you.</h2>
-      <p>We have your enquiry and will be in touch shortly.</p>
+      <p>Your enquiry has been submitted. We’ll be in touch by email.</p>
       <a class="btn q" href="index.html">Back to home</a>
     </div>
   </div>
